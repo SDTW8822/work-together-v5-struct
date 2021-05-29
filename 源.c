@@ -425,7 +425,7 @@ void SearchbyNum(STU stu[], int n, int m)
 			think = i;
 		}
 
-	}
+}
 
 	printf("\n学号 :%ld\t  姓名 :%s \t 总分 :%0.2f \t   平均分：%0.2f\t 名次：%d\n", stu[think].num, stu[think].name, stu[think].sum, stu[think].aver, think + 1);
 	printf("\n各科成绩：\n");
@@ -451,7 +451,7 @@ void SearchbyName(STU stu[], int n, int m)
 		if (strcmp(stu[i].name, names[0]) != 0)
 		{
 			cishu++;
-		}
+}
 		if (strcmp(stu[i].name, names[0]) == 0)
 		{
 			think = i;
@@ -503,7 +503,7 @@ void StatisticAnalysis(STU stu[], int n, int m)	//m门课程，n个学生
 void PrintScore(STU stu[], int n, int m)
 {
 	int i, t;
-	
+
 	for (i = 0; i < n; i++)
 	{
 		printf("\n姓名：%s学号 ：%10ld 总分：%4.2f 平均分：%4.2f\n", stu[i].name, stu[i].num, stu[i].sum, stu[i].aver);
